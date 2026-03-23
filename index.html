@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UFOWeb | Galactic Digital Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@300;400;600;800&family=VT323&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Manrope', sans-serif;
+        background-color: #1a0b2e; /* Deep Indigo/Purple */
+        overflow-x: hidden;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'DM Serif Display', serif;
+      }
+      
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1a0b2e;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #39ff14;
+        border-radius: 5px;
+        border: 2px solid #1a0b2e;
+      }
+
+      /* Utility for text stroke */
+      .text-stroke {
+        -webkit-text-stroke: 1px currentColor;
+        color: transparent;
+      }
+
+      /* Hide scrollbar for marquee but allow functionality */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      /* Pulse Animation for Special Offer Button */
+      @keyframes subtle-pulse {
+        0% { background-color: rgba(26, 11, 46, 0.9); box-shadow: 0 0 20px rgba(57, 255, 20, 0.3); }
+        50% { background-color: rgba(57, 255, 20, 0.15); box-shadow: 0 0 30px rgba(57, 255, 20, 0.6); }
+        100% { background-color: rgba(26, 11, 46, 0.9); box-shadow: 0 0 20px rgba(57, 255, 20, 0.3); }
+      }
+      
+      .subtle-pulse {
+        animation: subtle-pulse 3s infinite ease-in-out;
+      }
+      /* Pause animation on hover to allow the hover state to take over */
+      .subtle-pulse:hover {
+        animation-play-state: paused;
+      }
+
+      /* Text Blink Animation for Navbar */
+      @keyframes green-blink {
+        0%, 100% { color: rgba(255, 255, 255, 0.7); }
+        50% { color: #39ff14; text-shadow: 0 0 10px rgba(57, 255, 20, 0.8); }
+      }
+      
+      .animate-green-blink {
+        animation: green-blink 2s infinite ease-in-out;
+      }
+
+      /* Fix Chrome/Safari Autofill background color */
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover, 
+      input:-webkit-autofill:focus, 
+      input:-webkit-autofill:active {
+          -webkit-box-shadow: 0 0 0 30px #1a0b2e inset !important;
+          -webkit-text-fill-color: #39ff14 !important;
+          caret-color: #39ff14;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
